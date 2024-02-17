@@ -31,10 +31,10 @@ height: auto !important
 
 @media only screen and (max-width: 600px) {
     .eventStyle1 {
-        height: 1800px;
+        height: auto;
     }
     .eventStyle2 {
-        : 1600px;
+      height  : auto;
     }
     .eventStyle3 {
         height: 1700px;
