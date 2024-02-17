@@ -104,6 +104,11 @@ h5 {
     .eventPageBRs {
         display: contents;
     }
+    .events div{
+    background-color: transparent !important;
+    width: 80%;
+        margin:.5rem
+}
 }
 .events div{
     background-color: transparent !important;
