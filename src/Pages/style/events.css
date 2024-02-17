@@ -116,6 +116,17 @@ h5 {
     width: 80%;
         margin:.5rem !important
 }
+    .eventsArea{
+    height:auto !important
+}
+.events div{
+    width: auto !important;
+    
+}
+.eventStyle1 .mainSection{
+height: auto !important
+}
+
 }
 .events div{
     background-color: transparent !important;
