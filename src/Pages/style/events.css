@@ -107,7 +107,7 @@ h5 {
     .events div{
     background-color: transparent !important;
     width: 80%;
-        margin:.5rem
+        margin:.5rem !important
 }
 }
 .events div{
