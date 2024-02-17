@@ -11,7 +11,10 @@
     background-color: rgb(33, 29, 33);
     color: white;
 }
-
+.events div{
+    width: auto !important;
+    
+}
 .eventStyle3 {
     height: 2000px;
     width: 100%;
