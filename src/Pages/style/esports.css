@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
+
+:root {
+    --headerbg: #181818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height:auto;
+    width: 100vw;
+
+    background: black;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.nav-content {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+}
+
+.red {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 .5rem;
+}
+
+button {
+    background: var(--headerbg);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: larger;
+    border-radius: 12px;
+}
+
+.special {
+    background-color: #665700;
+}
+
+.special:hover {
+    background-color: var(--headerbg);
+    transition: all .3s ease-in-out;
+}
+
+header {
+    
+    background: var(--headerbg);
+    position: sticky;
+}
+
+ul li {
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+main>*,
+.e1,
+.e2 {
+    height: calc(100vh - 60px);
+}
+header{
+    display: 0;
+}
+main .main-cont p {
+    /* background-color: white; Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    border-radius: 12px;
+}
+
+.hover-effect {
+    opacity: .9;
+    border-radius: 6px;
+}
+
+.hover-effect:hover {
+    scale: 1.05;
+
+    opacity: 1;
+    transition: all .2s ease-in;
+}
+
+main .main-cont {
+    background: url('./images/bgmibg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav-menu-side {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 0;
+    background: linear-gradient(to right, transparent, black);
+    transition: width 1s ease-in-out;
+}
+
+.nav-transition {
+    width: 300px;
+}
+
+.nav-menu-side li {
+    margin-top: .5rem;
+}
+#espmain{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#espmain h2{
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: bold;
+}
+.bgmi-char {
+    position: absolute;
+    width: 40rem;
+    left: 70vw;
+    z-index: 2;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.why-esport {
+    font-size: 8rem;
+    margin-top: -20rem;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: bolder;
+    font-style: normal;
+    z-index: 6;
+}
+
+.why {
+    color: #bd062d
+}
+
+.hidden {
+    display: none;
+}
+
+
+main .cont1 {
+    height: calc(100vh - 60px);
+    background: url('./images/bgmi.jpg');
+    background-repeat: no-repeat;
+}
+
+.cont2 h1 {
+    position: absolute;
+    left: 16rem;
+    bottom: calc(-22rem - 98vh);
+    -webkit-text-stroke: 2px black;
+}
+
+.fancy-text {
+    font-size: 10rem;
+
+    background-image: url("./images/valorant.png");
+    background-position: 100% 58%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Steelfish Rg', 'helvetica neue',
+        helvetica, arial, sans-serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+}
+
+.pbg {
+    padding-top: 21rem;
+}
+
+.udgosh {
+    color: #bd062d;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Rubik Scribble", system-ui;
+
+}
+
+.about-udghosh {
+
+    padding: 1rem 10rem 1rem 1rem;
+    margin-left: auto;
+    max-width: 600px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #181818be;
+}
+
+.upcoming-events {
+    background-image: url('./images/gamingbg.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 7rem;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #d60000;
+    backdrop-filter: blur(20px);
+    padding-left: 2rem;
+
+}
+
+.event {
+    border-radius: 10px;
+}
+
+.events-name .event {
+    max-width: 100%;
+    height: auto;
+    backdrop-filter: blur(10px);
+    margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.event1 img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: auto !important;
+    left: 0;
+}
+
+.event-overlay {
+    background-color: #00000075;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 0px;
+    z-index: 1000;
+    margin: -1rem;
+    transition: transform 0.3s ease-in-out;
+    padding-top: 1rem;
+}
+
+.event-overlay:hover {
+    transform: scale(1.1);
+}
+
+.event-transition {
+    height: auto;
+}
+
+.text-bgmi {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.valorant img {
+    position: relative;
+    top: 0;
+    left: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+.register {
+    background-image: linear-gradient(to right, rgb(25, 167, 177), rgb(0, 51, 160), rgb(45, 11, 165));
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+.register:hover {
+    transform: scale(1.1);
+}
+
+main .cont2 {
+    background: url('./images/valorant.png');
+    background-repeat: no-repeat;
+}
+
+main .cont3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cont3 .e1 {
+    background: url('./images/cod.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cont3 .e2 {
+    background: url('./images/vr.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main .cont4 {
+    background: url('./images/fifa.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.events div {
+    width: 20rem;
+    height: auto;
+    /* background: url('https://dummyimage.com/600x400/000/fff'); */
+    background-color: gray;
+    margin: 2rem;}
+ .hover-effect1{
+    height: auto;
+    width: 200px;
+    background-color: #bd062d;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    top: 0 ;
+    left: -40%;
+    filter: blur(50px);
+}
+ .hover-effect2{
+    height: 80px;
+    width: 80px;
+    background-color: #bd062d;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    top: 70%;
+    left: 30vw;
+    filter: blur(50px);
+}
+ .hover-effect3{
+    height: 200px;
+    width: 200px;
+    background-color: #bd062d;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    top: 10 ;
+    left: 20vw;
+    filter: blur(50px);
+}
+ .hover-effect4{
+    height: 50px;
+    width: 50px;
+    background-color: #bd062d;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    top: 30%;
+    left: 40vw;
+    filter: blur(50px);
+}
+ .hover-effect5{
+    height: 100px;
+    width: 100px;
+    background-color: #bd062d;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    top: 30%;
+    left: -20vw;
+    filter: blur(50px);
+}
+
+.cont5 h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.e1 h1 {
+    background: linear-gradient(to right, rgb(4, 4, 9), rgb(96, 108, 123), rgb(38, 45, 71));
+    top: 25rem;
+    background-clip: text;
+    -webkit-text-stroke: 2px black;
+}
+
+.e2 h1 {
+    top: 35rem;
+    background: url('./images/vr.jpg');
+    background-clip: text;
+    -webkit-text-stroke: 2px black;
+}
+
+.cont6 h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.price {
+    width: 25rem;
+    height: 25rem;
+    background: gray;
+}
+
+.prices {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer {
+    margin: 10px;
+}
+
+footer * {
+    margin: 20px 10px;
+}
+
+footer h2 {
+    font-size: xx-large;
+}
+
+.links *,
+.pages * {
+    text-decoration: none;
+    color: rgba(255, 255, 220, .9);
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+.pages {
+    display: flex;
+}
+
+.pages-heading {
+    font-size: xx-large;
+    color: white;
+}
+
+footer img {
+    width: 100%;
+    margin: 0 20px 20px 0;
+    height: auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.foot-right {
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width:1129px) {
+    .nav-content {
+        margin: 0 2rem;
+    }
+
+    .bgmi-char {
+        left: 5rem;
+    }
+}
+
+@media (max-width:736px) {
+    .why-esport {
+        font-size: 5rem;
+    }
+
+    .bgmi-char {
+        left: 5rem;
+    }
+
+    .upcoming {
+        font-size: 3rem;
+        padding-left: 30vw;
+
+    }
+
+    .about-udghosh {
+        padding-right: 5rem;
+    }
+    .main-cont{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        background: url("./images/bggg.jpg") !important;
+        background-repeat:no-repeat !important;
+        background-position: center;
+        background-size: cover !important;
+    }
+
+    .bgmi-char{
+        height: 40%;
+        width: 40%;
+        left: 0 !important;
+    }
+    #espmain{
+        width: 100%;
+    }
+    a h2{
+        font-size: 2.3rem;
+    }
+    .bgmi-char{
+        position: relative;
+    }
+}
+
+@media (max-width:460px) {
+    .why-esport {
+        font-size: 3rem;
+    }
+
+    .bgmi-char {
+        left: 5rem;
+    }
+}
